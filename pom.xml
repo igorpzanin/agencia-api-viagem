@@ -1,0 +1,87 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Identificação do projeto -->
+    <groupId>com.exemplo.agencia</groupId>
+    <artifactId>agencia-viagem-api</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <name>AgenciaViagemAPI</name>
+    <description>API para uma agência de viagem</description>
+
+    <!-- Propriedades do projeto -->
+    <properties>
+        <!-- Definir a versão do Java para Java 8 -->
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <!-- Dependência do Spring Boot -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>2.7.9</version> <!-- Versão do Spring Boot compatível com Java 8 -->
+        </dependency>
+
+        <!-- Spring Boot Data JPA para persistência -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <version>2.7.9</version> <!-- Versão compatível com Spring Boot 2.7.9 -->
+        </dependency>
+
+        <!-- Banco de Dados H2 (para testes ou desenvolvimento) -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>2.1.214</version> <!-- Última versão estável do H2 -->
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- Spring Boot Web para criar endpoints REST -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.7.9</version> <!-- Versão compatível com Spring Boot 2.7.9 -->
+        </dependency>
+
+        <!-- Lombok para facilitar o código (getters/setters) -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version> <!-- Versão mais recente do Lombok -->
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Spring Boot DevTools para facilitar o desenvolvimento -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <version>2.7.9</version> <!-- Versão compatível com Spring Boot 2.7.9 -->
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- Dependência de testes -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>2.7.9</version> <!-- Versão compatível com Spring Boot 2.7.9 -->
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Plugin do Spring Boot para empacotar o JAR corretamente -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.7.9</version> <!-- Versão compatível com Spring Boot 2.7.9 -->
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
