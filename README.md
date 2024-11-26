@@ -10,16 +10,6 @@ Uma API RESTful desenvolvida em **Spring Boot** para gerenciar destinos turísti
 - **Atualizar Destinos**: Modificar informações de destinos existentes.
 - **Excluir Destinos**: Remover destinos do sistema.
 
-## Tecnologias Utilizadas
-
-- **Java 8**
-- **Spring Boot 3.1.4**
-- **H2 Database**: Banco de dados em memória para testes.
-- **Maven 3.9.9**: Gerenciador de dependências.
-- **Lombok**: Reduz a verbosidade do código.
-- **Spring Data JPA**: Para comunicação com o banco de dados.
-- **Spring Boot DevTools**: Ferramentas de desenvolvimento para facilitar o teste.
-
 ## Pré-requisitos
 
 Antes de começar, você precisará ter as seguintes ferramentas instaladas no seu computador:
